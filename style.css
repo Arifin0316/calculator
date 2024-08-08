@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+}
+
+.wraper {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    padding: 20px 35px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.scrin {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 34px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+    flex: 1;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.calc-button:last-child {
+    background: #d72880;
+    color: #fff;
+}
+
+.calc-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.calc-button:active {
+    background-color: #ffef78;
+}
+
+.double {
+    flex: 2;
+}
+
+.triple {
+    flex: 3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .scrin {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .calc-button {
+        font-size: 18px;
+        height: 50px;
+    }
+}
